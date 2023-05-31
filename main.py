@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 
 
 os.getcwd()
-os.chdir("C://Users//statpng//Desktop//1.Mesh3D//png.LA_flattening")
-
+os.chdir("D:/data/1.Mesh3D/png.LA_flattening")
+    
 from png_functions import *
 from aux_functions import *
 from clip_aux_functions import *
