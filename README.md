@@ -41,7 +41,7 @@ However, since "FillSurfaceHoles" is no longer compatible, this project uses pym
 (7) Incorporating the auto-region data into the dataset:  `./flat/ID-cut2_poly_clipped_c_flat-combined-region.vtk`
 
 
-[^1] Kim, I. S., Lim, B., Shim, J., Hwang, M., Yu, H. T., Kim, T. H., ... & CUVIA-AF1 Investigators. (2019). Clinical usefulness of computational modeling-guided persistent atrial fibrillation ablation: updated outcome of multicenter randomized study. Frontiers in Physiology, 10, 1512.
+[^1]: Kim, I. S., Lim, B., Shim, J., Hwang, M., Yu, H. T., Kim, T. H., ... & CUVIA-AF1 Investigators. (2019). Clinical usefulness of computational modeling-guided persistent atrial fibrillation ablation: updated outcome of multicenter randomized study. Frontiers in Physiology, 10, 1512.
 
 
 
