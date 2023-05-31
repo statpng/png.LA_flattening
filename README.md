@@ -67,7 +67,7 @@ conda activate env_vmtk38
 
 Then, install other packages:
 ```
-conda install pandas numpy matplotlib pymeshlab
+pip install pandas numpy matplotlib pymeshlab
 ```
 
 
