@@ -5,7 +5,7 @@ Author: Kipoong Kim (kkp7700@gmail.com)
 This project builds on the existing "[LA_flattening](https://github.com/martanunez/LA_flattening)" method described in:
 [*Fast quasi-conformal regional flattening of the left atrium*. Marta Nuñez-Garcia, Gabriel Bernardino, Francisco Alarcón, Gala Caixal, Lluís Mont, Oscar Camara, and Constantine Butakoff.  IEEE Transactions on Visualization and Computer Graphics (2020)](https://ieeexplore.ieee.org/abstract/document/8959311). Please cite this reference when using this code. 
 The "LA_flattening" method uses a Windows program called "FillSurfaceHoles" to conduct the surface reconstruction for the clipped PV region (hole). 
-However, since "FillSurfaceHoles" is no longer compatible, this project uses pymeshlab's "screened poisson surface reconstruction" method.
+However, since "FillSurfaceHoles" is no longer compatible, this project uses pymeshlab's "screened poisson surface reconstruction" method instead.
 
 ## Code
 [Python](https://www.python.org/) scripts depending (basically) on [VTK](https://vtk.org/) and [VMTK](http://www.vmtk.org/). 
