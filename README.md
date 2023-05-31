@@ -14,22 +14,26 @@ However, since "FillSurfaceHoles" is no longer compatible, this project uses pym
 ## How to use
 
 ### Materials
-Folder list
-- cuv
-- DF
-- LAT
-- PS
-- Smax
-- VoltMap
-- thickness
-- Miscellaneous mapping data
+- cuv (.cuv or .vtk)
+- DF (.vtk)
+- LAT (.vtk)
+- PS (.plt or .vtk)
+- Smax (.vtk)
+- VoltMap (.vtk)
+- thickness (.vtk)
+- Miscellaneous mapping data (.vtk)
 
 ### Process
 
-(1) Convert .cuv file (generated from CUVIA software[^1]) to .vtk file
-(2) Slice the PVs in .vtk files using the [paraview](https://www.paraview.org/)
-(3) Apply surface reconstruction on the sliced .vtk files.
-(4) Perform the LA_flattening method
+(1) Convert .cuv file (generated from CUVIA software[^1]) to .vtk file:  `ID.cuv >> ID-cut.vtk`
+(2) Slice the PVs in .vtk files using the [paraview](https://www.paraview.org/):  `ID-cut.vtk >> ID-cut2.vtk`
+(3) Convert unstructured polydata to structured polydata:  `ID-cut2.vtk >> ID-cut2_poly.vtk`
+(4) Apply surface reconstruction on the sliced .vtk files:  `ID-cut2_poly.vtk >> ID-cut2_poly-fill.stl >> ID-cut2_poly-fill.vtk`
+(5) Perform the LA_flattening method:  `./flat/ID-cut2_poly/ID-cut2_poly_clipped_c_flat.vtk`
+(6) Matching the mapping data to the flat:  `./flat/ID-cut2_poly_clipped_c_flat-${map}.vtk`  for  map=Voltage, DF, Smax, and etc.
+(7) Integrate the mapping data sets:  `./flat/ID-cut2_poly_clipped_c_flat-combined.vtk`
+(7) Incorporating the auto-region data into the dataset:  `./flat/ID-cut2_poly_clipped_c_flat-combined-region.vtk`
+
 
 [^1] Kim, I. S., Lim, B., Shim, J., Hwang, M., Yu, H. T., Kim, T. H., ... & CUVIA-AF1 Investigators. (2019). Clinical usefulness of computational modeling-guided persistent atrial fibrillation ablation: updated outcome of multicenter randomized study. Frontiers in Physiology, 10, 1512.
 
