@@ -3,7 +3,7 @@
 Created on Thu Apr 13 09:34:27 2023
 @author: statpng
 
-https://github.com/statpng/png.flattening
+https://github.com/statpng/png.LA_flattening
 """
 
 
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 os.getcwd()
-os.chdir("C://Users//statpng//Desktop//1.Mesh3D//LA_flattening")
+os.chdir("C://Users//statpng//Desktop//1.Mesh3D//png.LA_flattening")
 
 from png_functions import *
 from aux_functions import *
