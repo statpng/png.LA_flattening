@@ -7,7 +7,7 @@ This project builds on the existing "[LA_flattening](https://github.com/martanun
 The "LA_flattening" method uses a Windows program called "FillSurfaceHoles" to conduct the surface reconstruction for the clipped PV region (hole). 
 However, since "FillSurfaceHoles" is no longer compatible, this project uses pymeshlab's "screened poisson surface reconstruction" method instead.
 
-[Python](https://www.python.org/) scripts depending (basically) on [VTK](https://vtk.org/) and [VMTK](http://www.vmtk.org/). 
+[Python](https://www.python.org/) scripts depend (basically) on [VTK](https://vtk.org/) and [VMTK](http://www.vmtk.org/). 
 
 
 ## How to use
