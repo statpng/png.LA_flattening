@@ -426,7 +426,7 @@ def png_writeCoord(surface, filename, type="nodes"):
 
 
 
-def png_read_coord(path_nodes, path_edges, path_out):
+def png_read_and_write_coord(path_nodes, path_edges, path_out):
     """
     path_nodes = "E:/download/reconst_test - nodes.csv"
     path_edges = "E:/download/reconst_test - edges.csv"
@@ -1100,9 +1100,6 @@ def png_match_flat2vtk(path_vtk, path_flat, path_out, type_vtk="polydata"):
     print( len(cuv_values) )
     
     
-
-    
-    import pandas as pd
     cuv_nodes_flat = png_mesh_GetCoord(mesh_flat)
     cuv_edges_flat = ExtractVTKTriFaces(mesh_flat)
     
