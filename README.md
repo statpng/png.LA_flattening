@@ -61,8 +61,8 @@ Other required packages are: NumPy, SciPy, xlsxwriter, Matplotlib, joblib, pytho
 To install VMTK follow the instructions [here](http://www.vmtk.org/download/). The easiest way is installing the VMTK [conda](https://docs.conda.io/en/latest/) package (it additionally includes VTK, NumPy, etc.). It is recommended to create an environment where VMTK is going to be installed and activate it:
 
 ```
-conda create -n vmtk_env38 python=3.8 itk vtk vmtk scipy xlsxwriter matplotlib
-conda activate vmtk_env38
+conda create -n env_vmtk38 python=3.8 itk vtk vmtk scipy xlsxwriter matplotlib
+conda activate env_vmtk38
 ```
 
 Then, install other packages:
