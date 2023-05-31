@@ -72,6 +72,7 @@ pip install pandas numpy matplotlib pymeshlab pyvista
 
 If you want to remove the environment:
 ```
+conda deactivate env_vmtk38
 conda remove -n env_vmtk38 --all
 ```
 
