@@ -1,9 +1,16 @@
-# Left atrial flattening
-Author: Marta Nuñez-Garcia (marnugar@gmail.com)
+# png.LA_flattening
+Author: Kipoong Kim (kkp7700@gmail.com)
 
 ## About
-Implementation of the Left Atrial (LA) Fast Regional Flattening (FRF) method described in:
-[*Fast quasi-conformal regional flattening of the left atrium*. Marta Nuñez-Garcia, Gabriel Bernardino, Francisco Alarcón, Gala Caixal, Lluís Mont, Oscar Camara, and Constantine Butakoff.  IEEE Transactions on Visualization and Computer Graphics (2020)](https://ieeexplore.ieee.org/abstract/document/8959311). Please cite this reference when using this code. Preprint available at: [arXiv:1811.06896.](https://arxiv.org/pdf/1811.06896.pdf) The code runs in Linux and Windows. 
+This project builds on the existing "[LA_flattening](https://github.com/martanunez/LA_flattening)" method described in:
+[*Fast quasi-conformal regional flattening of the left atrium*. Marta Nuñez-Garcia, Gabriel Bernardino, Francisco Alarcón, Gala Caixal, Lluís Mont, Oscar Camara, and Constantine Butakoff.  IEEE Transactions on Visualization and Computer Graphics (2020)](https://ieeexplore.ieee.org/abstract/document/8959311). Please cite this reference when using this code. 
+The "LA_flattening" method uses a Windows program called "FillSurfaceHoles" to conduct the surface reconstruction for the clipped PV region (hole). 
+However, since "FillSurfaceHoles" is no longer compatible, this project uses meshlab's "screened poisson surface reconstruction" method.
+
+
+## Process 
+
+
 
 Example:
 
