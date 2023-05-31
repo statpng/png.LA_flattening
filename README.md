@@ -25,12 +25,19 @@ However, since "FillSurfaceHoles" is no longer compatible, this project uses pym
 ### Process
 
 (1) Convert .cuv file (generated from CUVIA software[^1]) to .vtk file:  `ID.cuv >> ID-cut.vtk`
+
 (2) Slice the PVs in .vtk files using the [paraview](https://www.paraview.org/):  `ID-cut.vtk >> ID-cut2.vtk`
+
 (3) Convert unstructured polydata to structured polydata:  `ID-cut2.vtk >> ID-cut2_poly.vtk`
+
 (4) Apply surface reconstruction on the sliced .vtk files:  `ID-cut2_poly.vtk >> ID-cut2_poly-fill.stl >> ID-cut2_poly-fill.vtk`
+
 (5) Perform the LA_flattening method:  `./flat/ID-cut2_poly/ID-cut2_poly_clipped_c_flat.vtk`
+
 (6) Matching the mapping data to the flat:  `./flat/ID-cut2_poly_clipped_c_flat-${map}.vtk`  for  map=Voltage, DF, Smax, and etc.
+
 (7) Integrate the mapping data sets:  `./flat/ID-cut2_poly_clipped_c_flat-combined.vtk`
+
 (7) Incorporating the auto-region data into the dataset:  `./flat/ID-cut2_poly_clipped_c_flat-combined-region.vtk`
 
 
